@@ -149,3 +149,25 @@ a:hover { color: var(--pink); }
   margin: 4px 6px 4px 0;
   font-size: 0.95rem;
 }
+
+.game-banner {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  font-size: 0; /* removes leftover emoji sizing */
+}
+
+.game-banner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* match each image's background so the logos blend in */
+.game-card.genshin .game-banner { background: #ffffff; }
+.game-card.vice .game-banner    { background: #ffffff; }
+.game-card.albion .game-banner  { background: #000000; }
+.game-card.pubg .game-banner    { background: #ffffff; }
