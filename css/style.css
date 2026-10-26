@@ -115,22 +115,6 @@ a:hover { color: var(--pink); }
 .vice    { --accent: #ff2e97; --banner: linear-gradient(135deg, #ff2e97, #ff9a3c); }
 .albion  { --accent: #ffc233; --banner: linear-gradient(135deg, #6b3e1a, #ffc233); }
 .pubg    { --accent: #9acd32; --banner: linear-gradient(135deg, #2f3b1a, #9acd32); }
-
-/* ABOUT */
-.about-section {
-  background: linear-gradient(180deg, #0f0f1d, #181830);
-  border-top: 1px solid var(--purple);
-  border-bottom: 1px solid var(--purple);
-}
-.info-box {
-  background: var(--panel-solid);
-  border: 1px solid var(--purple);
-  border-radius: 10px;
-  padding: 20px;
-  height: 100%;
-}
-.info-box h5 { color: var(--pink); }
-
 /* FORM */
 .game-input {
   background: var(--panel-solid);
@@ -149,4 +133,19 @@ a:hover { color: var(--pink); }
   background: #05050a;
   border-top: 2px solid var(--pink);
   color: var(--text);
+}
+/* ABOUT: player profile */
+.profile-list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(138, 43, 226, 0.5);
+}
+.profile-list li:last-child { border-bottom: none; }
+.profile-list span {
+  color: var(--neon);
+  font-weight: 600;
+  margin-right: 6px;
+}
+.genre-tags .badge-genre {
+  margin: 4px 6px 4px 0;
+  font-size: 0.95rem;
 }
