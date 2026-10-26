@@ -74,7 +74,7 @@ a:hover { color: var(--ink); }
   padding: 4rem 0;
   background:
     linear-gradient(180deg, rgba(255,255,255,0) 55%, var(--cliff) 100%),
-    url("../assets/images-3.jpeg") center / cover no-repeat;
+    url("../image/hero.jpeg") center / cover no-repeat;
 }
 .hero .container {
   max-width: 760px;
@@ -237,4 +237,24 @@ a:hover { color: var(--ink); }
   html { scroll-behavior: auto; }
   .btn-neon { transition: none; }
   .btn-neon:hover, .btn-neon:focus { transform: none; }
+}
+
+/* ---------- WAITING FOR GTA 6 ---------- */
+.wait-card {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #ffe3ef 0%, #fff6d9 100%);
+  border: 1px solid var(--line);
+  border-left: 6px solid #f06a9b;
+  border-right: 6px solid var(--gold);
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(28, 69, 104, 0.12);
+}
+.wait-title {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  margin-bottom: 0.75rem;
+}
+.wait-text {
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+  color: var(--ink-soft);
 }
