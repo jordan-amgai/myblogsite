@@ -258,3 +258,57 @@ a:hover { color: var(--ink); }
   margin: 0 auto 1.5rem;
   color: var(--ink-soft);
 }
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.count-box {
+  min-width: 90px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #ff2fd0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 12px rgba(255, 47, 208, 0.5);
+}
+
+.count-box span {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.count-box small {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff2fd0;
+}
+
+.hero-name {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #ff2fd0, 0 0 20px #ff2fd0;
+  animation: nameFade 1s ease-out;
+}
+
+.hero-name span {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ff2fd0;
+}
+
+@keyframes nameFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
